@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { SCHOOL } from '../config/design';
-import { HiOutlineMail, HiOutlineLockClosed, HiOutlineChevronDown, HiOutlineShieldCheck, HiOutlineAcademicCap, HiOutlineUserGroup, HiOutlineLogin } from 'react-icons/hi';
+import { HiOutlineMail, HiOutlineLockClosed, HiOutlineChevronDown, HiOutlineShieldCheck, HiOutlineAcademicCap } from 'react-icons/hi';
 import toast from 'react-hot-toast';
 
 const demos = [
@@ -192,7 +192,7 @@ const LoginPage = () => {
               </>
             ) : (
               <>
-                <HiOutlineLogin size={16} />
+                <HiOutlineShieldCheck size={16} />
                 Masuk ke Portal
               </>
             )}
