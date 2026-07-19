@@ -7,6 +7,10 @@ const seed = async () => {
     await sequelize.authenticate();
     console.log('Database connected');
 
+    // Sync database tables first before seeding
+    await sequelize.sync({ force: true });
+    console.log('Database tables recreated successfully');
+
     // Roles
     await Role.bulkCreate([
       { id: 1, name: 'Admin', description: 'System administrator' },
