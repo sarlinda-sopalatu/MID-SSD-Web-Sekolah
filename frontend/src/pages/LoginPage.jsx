@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { SCHOOL } from '../config/design';
-import { HiOutlineMail, HiOutlineLockClosed, HiOutlineChevronDown, HiOutlineShieldCheck, HiOutlineSparkles } from 'react-icons/hi';
+import { HiOutlineMail, HiOutlineLockClosed, HiOutlineChevronDown, HiOutlineShieldCheck, HiOutlineAcademicCap } from 'react-icons/hi';
 import toast from 'react-hot-toast';
 
 const demos = [
@@ -73,7 +73,7 @@ const LoginPage = () => {
         <div className="relative space-y-8 my-auto">
           <div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-4">
-              <HiOutlineSparkles size={12} /> Akreditasi A Unggul
+              <HiOutlineAcademicCap size={12} /> Akreditasi A Unggul
             </div>
             <h1 className="text-4xl font-extrabold text-white leading-tight tracking-tight">
               Sistem Portal<br />
