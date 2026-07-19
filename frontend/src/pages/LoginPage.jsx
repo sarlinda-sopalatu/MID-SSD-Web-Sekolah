@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { SCHOOL } from '../config/design';
-import { HiOutlineMail, HiOutlineLockClosed, HiOutlineChevronDown, HiOutlineShieldCheck, HiOutlineAcademicCap } from 'react-icons/hi';
 import toast from 'react-hot-toast';
 
 const demos = [
@@ -81,7 +80,11 @@ const LoginPage = () => {
         <div className="relative z-10 space-y-8 my-auto">
           <div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-4">
-              <HiOutlineShieldCheck size={13} /> Akreditasi A Unggul
+              {/* Native SVG: Shield Check */}
+              <svg className="w-3.5 h-3.5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              Akreditasi A Unggul
             </div>
             <h1 className="text-4xl font-extrabold text-white leading-tight tracking-tight">
               Sistem Portal<br />
@@ -145,7 +148,10 @@ const LoginPage = () => {
           <div>
             <label className="block text-xs font-semibold text-slate-600 mb-1.5 uppercase tracking-wider">Email</label>
             <div className="relative">
-              <HiOutlineMail size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+              {/* Native SVG: Mail */}
+              <svg className="w-5 h-5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
               <input
                 type="email"
                 value={email}
@@ -160,7 +166,10 @@ const LoginPage = () => {
           <div>
             <label className="block text-xs font-semibold text-slate-600 mb-1.5 uppercase tracking-wider">Kata Sandi</label>
             <div className="relative">
-              <HiOutlineLockClosed size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+              {/* Native SVG: Lock */}
+              <svg className="w-5 h-5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
               <input
                 type={showPw ? 'text' : 'password'}
                 value={password}
@@ -192,7 +201,10 @@ const LoginPage = () => {
               </>
             ) : (
               <>
-                <HiOutlineShieldCheck size={16} />
+                {/* Native SVG: Login/Arrow */}
+                <svg className="w-4.5 h-4.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" width={18}>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                </svg>
                 Masuk ke Portal
               </>
             )}
@@ -200,7 +212,6 @@ const LoginPage = () => {
         </form>
 
         {/* ─── Collapsible Accordion: AKSES CEPAT (AKUN DEMO) ─── */}
-        {/* Sangat rapi, tidak menampilkan email atau sandi asli di layar */}
         <div className="mt-6 border border-slate-200 rounded-2xl bg-white overflow-hidden shadow-sm">
           <button
             type="button"
@@ -210,7 +221,10 @@ const LoginPage = () => {
             <span className="flex items-center gap-2 text-slate-700">
               🔑 Gunakan Akun Demo Uji Coba
             </span>
-            <HiChevronDown size={16} className={`text-slate-400 transition-transform duration-200 ${showDemo ? 'rotate-180' : ''}`} />
+            {/* Native SVG: Chevron Down */}
+            <svg className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${showDemo ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+            </svg>
           </button>
 
           {showDemo && (
