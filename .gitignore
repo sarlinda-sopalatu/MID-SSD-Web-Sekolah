@@ -24,3 +24,20 @@ Thumbs.db
 
 # Coverage
 coverage/
+
+# Sensitif - jangan push
+.env
+*.log
+server-error.log
+server.log
+SCALABLE SYSTEM DESIGN.pdf
+
+# Build output
+frontend/dist/
+frontend/node_modules/
+backend/node_modules/
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
