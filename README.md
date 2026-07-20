@@ -381,8 +381,7 @@ http://127.0.0.1:3000
 ## 🎥 Video Presentasi YouTube
 
 > Link akan diperbarui setelah video diunggah
-
-👉 **[Tonton Video Presentasi Kelompok Web Sekolah Cendekia](https://youtu.be/)**
+https://drive.google.com/drive/folders/1mxjziVb_gZHg2c2p5EJ9V0rNsKXtziPr?usp=sharing
 
 ---
 
