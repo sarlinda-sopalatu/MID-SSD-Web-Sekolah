@@ -47,7 +47,38 @@ app.use('/api/notifications', notificationRoutes);
 app.get('/api/health', async (req, res) => {
   try {
     await sequelize.authenticate();
-    res.json({ status: 'ok', database: 'connected', timestamp: new Date() });
+    
+    // Hitung statistik database untuk monitoring
+    const { User, Student, Teacher, ActivityLog } = require('./models');
+    const [totalUsers, totalStudents, totalTeachers, totalLogs] = await Promise.all([
+      User.count(),
+      Student.count(),
+      Teacher.count(),
+      ActivityLog.count()
+    ]);
+
+    res.json({
+      status: 'ok',
+      database: 'connected',
+      server: {
+        port: PORT,
+        environment: process.env.NODE_ENV || 'development',
+        uptime_seconds: Math.floor(process.uptime()),
+        memory_usage_mb: Math.round(process.memoryUsage().heapUsed / 1024 / 1024)
+      },
+      statistics: {
+        total_users: totalUsers,
+        total_students: totalStudents,
+        total_teachers: totalTeachers,
+        total_activity_logs: totalLogs
+      },
+      modules: [
+        'auth', 'users', 'students', 'teachers', 'classes',
+        'subjects', 'journals', 'bk', 'attendance', 'grades',
+        'schedules', 'reports', 'logs', 'notifications'
+      ],
+      timestamp: new Date().toISOString()
+    });
   } catch (error) {
     res.status(500).json({ status: 'error', message: error.message });
   }
