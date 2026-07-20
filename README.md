@@ -390,7 +390,7 @@ http://127.0.0.1:3000
 
 > Link akan diperbarui setelah dokumen diunggah ke Google Drive
 
-👉 **[Unduh Laporan PDF](https://drive.google.com/)**
+👉 **[https://drive.google.com/file/d/1Rg8oZ1ZvyfLZifCoqX4EMUD-FJ1rhO_D/view?usp=drive_link)**
 
 ---
 
