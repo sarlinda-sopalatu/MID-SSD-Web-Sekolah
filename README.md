@@ -389,7 +389,7 @@ https://drive.google.com/drive/folders/1mxjziVb_gZHg2c2p5EJ9V0rNsKXtziPr?usp=sha
 
 > Link akan diperbarui setelah dokumen diunggah ke Google Drive
 
-https://drive.google.com/file/d/1Rg8oZ1ZvyfLZifCoqX4EMUD-FJ1rhO_D/view?usp=sharing
+https://drive.google.com/file/d/1dfFUBY2iwJn33bgrHNNn261UFDP3KlPV/view?usp=sharing
 
 ---
 
