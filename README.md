@@ -414,7 +414,7 @@ Repository ini **tidak mengandung** data sensitif:
 
 ```
 Nama Kelompok  : Web Sekolah Cendekia
-Kelas          : TI-4A
+Kelas          : RPL A
 Nama Anggota   :
   1. Devi Nirwana              (105841121023) — System Analyst
   2. Alhizra                   (105841101523) — System Architect
@@ -424,11 +424,11 @@ Nama Anggota   :
 
 Judul Proyek   : Perancangan dan Pengembangan Web Sekolah Cendekia
                  Terintegrasi Berbasis Scalable System Design
-Link YouTube   : [diisi setelah video diupload]
+Link YouTube   : https://drive.google.com/drive/folders/1mxjziVb_gZHg2c2p5EJ9V0rNsKXtziPr?usp=sharing
 Link GitHub    : https://github.com/sarlinda-sopalatu/MID-SSD-Web-Sekolah
-Link Laporan   : [diisi setelah PDF diupload ke Google Drive]
+Link Laporan   : https://drive.google.com/file/d/1dfFUBY2iwJn33bgrHNNn261UFDP3KlPV/view?usp=sharing
 ```
 
 ---
 
-*© 2025 Kelompok Web Sekolah Cendekia — TI-4A | Mata Kuliah Scalable System Design*
+*© 2026 Kelompok Web Sekolah Cendekia — TI-4A | Mata Kuliah Scalable System Design*
